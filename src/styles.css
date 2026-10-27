@@ -27,6 +27,9 @@ h1, h2, h3, p { margin: 0; }
 .human-color { color: var(--cyan); }
 .robot-color { color: var(--orange); }
 .app-shell { max-width: 1536px; padding: 0 24px; margin: auto; }
+.site-footer { padding: 20px 0 24px; text-align: center; }
+.site-footer a { display: inline-block; padding: 8px; color: var(--muted); font-size: 20px; line-height: 1.4; text-underline-offset: 4px; }
+.site-footer a:hover { color: var(--cyan); }
 .site-header { display: flex; align-items: center; gap: 26px; min-height: 76px; }
 .wordmark { display: flex; align-items: center; gap: 13px; text-decoration: none; color: #f4e8dc; white-space: nowrap; font: 23px/1.5 var(--pixel); letter-spacing: -1px; }
 .wordmark .move-glyph { width: 42px; height: 42px; }

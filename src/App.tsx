@@ -53,6 +53,7 @@ export default function App() {
       <Insights state={state} />
     </main>
     <BattleLog rounds={matchHistory} />
+    <footer className="site-footer"><a href="https://huntinghound.github.io/">Haoran Xu's homepage</a></footer>
     {brief ? <MissionBrief onClose={() => setBrief(false)} /> : null}
     {confirmReset ? <dialog ref={resetDialog} aria-labelledby="reset-title" onClose={() => setConfirmReset(false)}><div className="dialog-content"><h2 id="reset-title">WIPE THE MACHINE?</h2><p>This erases its learned patterns, all scores, and the current match. Your next challenge starts with a fresh neural network.</p><div className="dialog-actions"><button className="secondary-button" onClick={() => resetDialog.current?.close()}>KEEP FIGHTING</button><button className="primary-button" onClick={() => { setConfirmReset(false); reset(); }}>RESET EVERYTHING</button></div></div></dialog> : null}
   </div>;
